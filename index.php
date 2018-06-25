@@ -34,7 +34,7 @@
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <!-- <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css"> -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
 
@@ -43,12 +43,12 @@
     <link rel="stylesheet" type="text/css"  href="css/style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500,700|Work+Sans:200,300,400,500,600,700" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,100,800,900,400,200,300' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
-
 
   </head>
   <body>
+
+<!-- HEADER -->
+
     <header id="tf-home" class="medium">
         <nav class="navbar navbar-expand-lg orange navbar-dark fixed-top">
             <div class="navbar-fb">
@@ -90,6 +90,8 @@
             <br>
         </nav>
     </header>
+
+<!-- A PROPOS -->
 
     <section id="tf-service">
         <div class="orange title">
@@ -152,6 +154,8 @@
           <div id="portfolio"></div>
     </section>
 
+<!-- PORTFOLIO -->
+
     <section id="tf-portfolio">
       <div class="bleu title-bleu">
         <h2 >Portfolio</h2>
@@ -182,7 +186,7 @@
               <img src="img/portfolio/caravane-01.jpg" alt="recto flyer Échappée clownesque" class="img-responsive">
               <img src="img/portfolio/caravane-02.jpg" alt="verso flyer Échappée clownesque" class="img-responsive">
           </div>
-          <div class="col-lg-5 col-md-5 col-sm-9">
+          <div class="col-lg-5 col-md-5 col-sm-9 first">
             <div class="client right">
               <h3><a href="https://www.caravanecompagnie.fr/" target="_blank">Caravane Compagnie</a></h3>
               <small>Compagnie théatrale</small>
@@ -230,7 +234,7 @@
             <img src="img/portfolio/sac_11.png" alt="" class="img-responsive cabas">
             <img src="img/portfolio/sac_12.png" alt="" class="img-responsive cabas">
           </div>
-          <div class="col-lg-5 col-md-5 col-sm-9">
+          <div class="col-lg-5 col-md-5 col-sm-9 first">
             <div class="client right">
               <h3>Sacs cabas "U de"</h3>
               <small>Système U Ouest</small>
@@ -267,7 +271,7 @@
           <div class="col-lg-7 col-md-7 col-sm-12">
               <img src="img/portfolio/fl.jpg" alt="jupe palette fruits et légumes" class="img-responsive">
           </div>
-          <div class="col-lg-5 col-md-5 col-sm-9">
+          <div class="col-lg-5 col-md-5 col-sm-9 first">
             <div class="client right">
               <h3>Fruits et légumes</h3>
               <small>PLV pour le magasins U</small>
@@ -301,48 +305,10 @@
       <article>
         <small>Les travaux présentés ci-dessus sont la propriété des clients nommés dans les descriptions.</small>
       </article>
-<!--
-      <div class="row" >
-          <div class="col-lg-12" style="padding-top:2em;">
-              <p>Les travaux présentés ci-dessus sont la propriété des clients nommés dans les descriptions.</p>
-          </div>
-      </div> -->
+
     </section>
 
-    <!-- <div id="tf-why-me">
-        <div class="overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h3>Pourquoi me faire confiance</h3>
-                        <br>
-                        <ul class="list-inline why-me">
-                            <li>
-                                <h4>Créativité et maîtrise technique</h4>
-                                <p>Une solide culture de l'image et des arts graphiques constitue la base sur laquelle naissent mes idées. Sans technique les bonnes idées ne prennent pas forme, c'est pourquoi <strong>j'associe à ma sensibilité créatrice des compétences techniques irréprochables.</strong></p>
-                            </li>
-                            <li>
-                                <h4>Un champ d'application étendu</h4>
-                                <p><strong>Ma polyvalence</strong> me permet d'œuvrer de manière globale sur votre projet, du print au digital pour une communication cohérente sur tous vos supports.</p>
-                            </li>
-                            <li>
-                                <h4>Un service adapté à votre besoin</h4>
-                                <p>Mon écoute, mon sens du travail bien fait, ainsi que ma capacité à respecter les délais vous donneront la satisfaction d'un <strong>service sur-mesure.</strong></p>
-                            </li>
-                        </ul>
-                        <a href="#tf-contact" class="btn btn-primary my-btn3">Contact</a>
-
-                        <img src="img/ccartes.png" style="float: right; width:50%"; class="img-responsive"/>
-                    </div>
- <div class="col-xs-4 col-sm-4 col-md-3 col-lg-3" style="float:right; margin-right:20px;" class="img-responsive"/>
-<img src="img/gif_readymade_fb.gif" class="img-responsive"/>
-     <div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-        </div> -->
+<!-- CONTACT -->
 
     <section id="tf-contact">
       <div class="orange title">
@@ -352,6 +318,8 @@
           <?php include("contact.php") ?>
         </article>
     </section>
+
+<!-- FOOTER -->
 
     <footer id="tf-footer">
         <div class="container">
@@ -373,6 +341,9 @@
     <!-- Javascripts
     ================================================== -->
     <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 
   </body>
 </html>

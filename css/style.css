@@ -91,7 +91,7 @@ h2{
   background: white;
   border-top: 2px solid #002E54;
   padding: 1rem;
-
+  margin-bottom: 1rem;
   width:100%;
   display: block;
 }
@@ -100,9 +100,9 @@ h2{
   padding-left: 33%;
 }
 
-.right {
+/* .right {
   padding-right: 33%;
-}
+} */
 
 .client h3{
   /* padding-left: 1rem;
@@ -202,6 +202,36 @@ ul.tags > li {
   .container-portfolio {
     min-height: 50vh;
   }
+
+}
+
+@media (min-width: 768px) {
+  .client-right {
+    padding-left: 2rem;
+    /* padding-right: 0rem; */
+  }
+
+  .right {
+    /* padding-left: 0; */
+    padding-right: 33%;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .first {
+    order: -1;
+  }
+
+  .right {
+    padding-left: 33%;
+    padding-right: 0;
+  }
+
+  .client-right {
+    padding-left: 0rem;
+    padding-right: 2rem;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -240,9 +270,9 @@ h1 {
   padding-right: 2rem;
 }
 
-.client-right {
+/* .client-right {
   padding-left: 2rem;
-}
+} */
 
 h4 {
 	margin-bottom: 20px;
@@ -882,6 +912,8 @@ font-size: 1em;
 }
 
 @media screen and (max-width: 767px) {
+
+
 
 h1 {
   margin: .67em 0;
