@@ -151,6 +151,9 @@
       <article style="margin: 0; background: white;">
         <small>Les travaux présentés ci-dessus sont la propriété des clients nommés dans les descriptions.</small>
       </article>
+      <article style="margin: 0; background: white; padding-top: 3rem;">
+        <div class="github"><a href="https://github.com/fbourelle" target="_blank" title="Lien Github"><i class="fab fa-github fa-lg" style="margin-right: .5em;"></i>Consultez mon Github pour voir mes projets Symfony, Laravel, Angular, Vue.js, etc.</a></div>
+      </article>
       <article></article>
     </section>
 
