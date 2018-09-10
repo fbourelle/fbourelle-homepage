@@ -1,0 +1,93 @@
+<div class="col-lg-7 col-md-7 col-sm-12 visuels">
+  <div class="slider" v-for="(image, index) in clientData.images" v-on:click="changeImage(index)" >
+    <slide>
+      <div class="item" v-bind:class="[firstImage(index) ? active : right ]" v-bind:id="'image' + clientData.client + index">
+        <img v-bind:src="'img/portfolio/' + image" v-bind:alt="clientData.altImage" class="img-responsive-png">
+      </div>
+    </slide>
+  </div>
+  <ol class="carousel-index" >
+    <li v-bind:id="'index' + clientData.client + index"  v-bind:class="{ active: firstImage(index) }" v-for="(image, index) in clientData.images" v-on:click="changeIndex(index)"></li>
+  </ol>
+</div>
+
+// <ol class="carousel-index" >
+//   <li v-bind:id="'index' + clientData.client + index"  v-bind:class="{ active: firstImage(index) }" v-for="(image, index) in clientData.images" v-on:click="changeIndex(index)"></li>
+// </ol>
+
+<slide v-for="(image, index) in imagesData" v-on:click="changeImage(index)">
+    <img v-bind:src="'img/portfolio/' + image" v-bind:alt="clientData.altImage" class="img-responsive-png">
+</slide>
+
+
+<ol class="carousel-index" >
+  <li v-for="n in slidesCount" v-on:click="goto(n-1)" v-bind:class="{ active: n-1 == index }"></li>
+</ol>
+
+<!-- <article class="container-portfolio clientleft">
+  <div class="row" id="lpc">
+    <div class="col-lg-5 col-md-5 col-sm-9">
+      <div class="client left">
+        <h3><a href="https://www.lespetiteschanceuses.fr" target="_blank">Les Petites Chanceuses</a></h3>
+        <small>E-commerce</small>
+        <p>Marketplace réalisée avec <a href="https://www.prestashop.com/fr" target="_blank">Prestashop.</a>
+        Conception du site, personnalisation du template et des modules.</p>
+        <ul class="tags">
+          <li>digital</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-7 col-md-7 col-sm-12 caroussel">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/portfolio/lpc.png" alt="Illustration site e-commerce www.lespetiteschanceuses.fr" class="img-responsive-png">
+        </div>
+        <div class="item">
+          <img src="img/portfolio/lpc_2.png" alt="Illustration site e-commerce www.lespetiteschanceuses.fr" class="img-responsive-png">
+        </div>
+      </div>
+      <ol class="carousel-index">
+        <li data-slide-to="0" class="active"></li>
+        <li data-slide-to="1"></li>
+      </ol>
+    </div>
+  </div>
+</article> -->
+
+<article class="container-portfolio clientright">
+  <div class="row" id="caravane">
+    <div class="col-lg-7 col-md-7 col-sm-12">
+        <img src="img/portfolio/caravane-01.jpg" alt="recto flyer Échappée clownesque" class="img-responsive">
+        <img src="img/portfolio/caravane-02.jpg" alt="verso flyer Échappée clownesque" class="img-responsive">
+    </div>
+    <div class="col-lg-5 col-md-5 col-sm-9 first">
+      <div class="client right">
+        <h3><a href="https://www.caravanecompagnie.fr/" target="_blank">Caravane Compagnie</a></h3>
+        <small>Compagnie théatrale</small>
+        <p>Flyer de la tournée "Échappée clownesque en Pays de Retz" du spectacle "Entre 2 Ô". Graphisme, illustration, maquettage.<br>Format 420 x 148 mm, pliage accordéon.</p>
+        <ul class="tags">
+          <li>print</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</article>
+
+<article class="container-portfolio clientleft">
+  <div class="row" id="salon">
+    <div class="col-lg-5 col-md-5 col-sm-9">
+      <div class="client left">
+        <h3>Salon U</h3>
+        <small>Salon professionnel de <a href="https://www.magasins-u.com" target="_blank">Système U Ouest</a></small>
+        <p>Créations des visuels de la campagne de communication du salon de Système U Ouest : logo, illustration, affiche, guide, plan, plv, signalétique, site internet, etc.</p>
+        <ul class="tags">
+          <li>print</li>
+          <li>digital</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-7 col-md-7 col-sm-12">
+      <img src="img/portfolio/affiche-salon-u-2016.png" alt="affiche salon système u ouest" class="img-responsive">
+    </div>
+  </div>
+</article>
