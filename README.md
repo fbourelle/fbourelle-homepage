@@ -12,8 +12,8 @@ Un objet "compétences" et un objet "clients", structurés en JSON, sont inclus 
 Pour les compétences, un composant seulement affiche les items, l'animation est gérée avec CSS.
 Pour les clients, voici la structure :
 
-Objet VUE
-    |
+# Objet VUE
+#    |
     Composant client (parcourt les clients)
             |
             Composant contenu client (description des clients)
