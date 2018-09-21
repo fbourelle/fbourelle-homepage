@@ -40,10 +40,7 @@ $(function(){
       $('#fourmi').html(' ');
       win = false;
       $('#stop').text('Stop');
-      $('#fourmi').html(generate( 20, 20
-              // $('#dimX').val(),
-              // $('#dimY').val()
-          ));
+      $('#fourmi').html(generate( $('#dimX').val(), $('#dimY').val()));
     }
   });
 
